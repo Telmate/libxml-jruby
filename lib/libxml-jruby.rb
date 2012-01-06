@@ -51,21 +51,21 @@ end  # module LibXMLJRuby
 
 require 'java'
 require 'stringio'
-import javax.xml.parsers.DocumentBuilder
-import javax.xml.parsers.DocumentBuilderFactory
-import javax.xml.xpath.XPath
-import javax.xml.xpath.XPathFactory
-import javax.xml.xpath.XPathConstants
-import javax.xml.namespace.NamespaceContext
-import java.io.StringReader
-import java.io.StringWriter
-import javax.xml.validation.Schema
-import javax.xml.validation.SchemaFactory
-import java.io.ByteArrayInputStream
-import javax.xml.transform.stream.StreamSource
-import javax.xml.transform.stream.StreamResult
-import javax.xml.transform.TransformerFactory
-import javax.xml.transform.dom.DOMSource
+java_import javax.xml.parsers.DocumentBuilder
+java_import javax.xml.parsers.DocumentBuilderFactory
+java_import javax.xml.xpath.XPath
+java_import javax.xml.xpath.XPathFactory
+java_import javax.xml.xpath.XPathConstants
+java_import javax.xml.namespace.NamespaceContext
+java_import java.io.StringReader
+java_import java.io.StringWriter
+java_import javax.xml.validation.Schema
+java_import javax.xml.validation.SchemaFactory
+java_import java.io.ByteArrayInputStream
+java_import javax.xml.transform.stream.StreamSource
+java_import javax.xml.transform.stream.StreamResult
+java_import javax.xml.transform.TransformerFactory
+java_import javax.xml.transform.dom.DOMSource
 
 # these use include_class to avoid conflicts with Rake's top-level
 # import method, the issue doesn't seem to occur when not using a
