@@ -48,7 +48,7 @@ module LibXMLJRuby
         ###############################################################
         # TODO: Add support for to_s(:indent => false) . JKW
         ###############################################################
-        super.to_s
+        self.root.to_s or super.to_s
       end
     end    
   end
