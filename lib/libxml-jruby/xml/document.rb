@@ -43,6 +43,13 @@ module LibXMLJRuby
       def root
         @root ||= Node.from_java(java_obj.document_element)
       end
+      
+      def to_s(*a)
+        ###############################################################
+        # TODO: Add support for to_s(:indent => false) . JKW
+        ###############################################################
+        super.to_s
+      end
     end    
   end
 end
