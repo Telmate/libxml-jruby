@@ -67,12 +67,12 @@ java_import javax.xml.transform.stream.StreamResult
 java_import javax.xml.transform.TransformerFactory
 java_import javax.xml.transform.dom.DOMSource
 
-# these use include_class to avoid conflicts with Rake's top-level
+# these use java_import to avoid conflicts with Rake's top-level
 # import method, the issue doesn't seem to occur when not using a
 # string.
-include_class 'com.sun.org.apache.xml.internal.utils.PrefixResolver'
-include_class 'com.sun.org.apache.xml.internal.utils.PrefixResolverDefault'
-include_class 'org.xml.sax.InputSource'
+java_import 'com.sun.org.apache.xml.internal.utils.PrefixResolver'
+java_import 'com.sun.org.apache.xml.internal.utils.PrefixResolverDefault'
+java_import 'org.xml.sax.InputSource'
 
 LibXMLJRuby.require_all_libs_relative_to __FILE__
 ::LibXML = ::LibXMLJRuby
