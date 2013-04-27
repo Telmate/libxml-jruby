@@ -67,6 +67,8 @@ java_import javax.xml.transform.stream.StreamResult
 java_import javax.xml.transform.TransformerFactory
 java_import javax.xml.transform.dom.DOMSource
 
+require 'jaxp-ri-1.4.5.jar'
+
 # these use java_import to avoid conflicts with Rake's top-level
 # import method, the issue doesn't seem to occur when not using a
 # string.
