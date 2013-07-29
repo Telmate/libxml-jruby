@@ -75,6 +75,7 @@ require 'jaxp-ri-1.4.5.jar'
 java_import 'com.sun.org.apache.xml.internal.utils.PrefixResolver'
 java_import 'com.sun.org.apache.xml.internal.utils.PrefixResolverDefault'
 java_import 'org.xml.sax.InputSource'
+java_import 'com.sun.org.apache.xpath.internal.jaxp.XPathFactoryImpl'
 
 LibXMLJRuby.require_all_libs_relative_to __FILE__
 ::LibXML = ::LibXMLJRuby

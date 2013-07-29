@@ -1,3 +1,5 @@
+
+
 module LibXMLJRuby
   module XML
     module XPath
@@ -37,7 +39,7 @@ module LibXMLJRuby
         
         private
         def xpath_factory
-          @xpath_factory ||= XPathFactory.new_instance
+          @xpath_factory ||= XPathFactoryImpl.new
         end
         
         def xpath
