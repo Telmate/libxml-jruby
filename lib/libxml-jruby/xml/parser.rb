@@ -74,7 +74,7 @@ class LibXMLJRuby::XML::Parser
   end
   
   def document_builder_factory
-    @dbf ||= DocumentBuilderFactory.new_instance
+    @dbf ||= DocumentBuilderFactoryImpl.new_instance
   end
   
   def document_builder

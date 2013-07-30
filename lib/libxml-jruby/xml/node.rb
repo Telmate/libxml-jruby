@@ -28,7 +28,7 @@ module LibXMLJRuby
       attr_accessor :java_obj # org.w3c.dom.Element(Node?)
       
       def initialize(name, content = nil)
-        jdoc = DocumentBuilderFactory.new_instance.new_document_builder.new_document
+        jdoc = DocumentBuilderFactoryImpl.new_instance.new_document_builder.new_document
         self.java_obj = jdoc.createElement(name)
         self.content = content
       end

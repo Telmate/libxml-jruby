@@ -76,6 +76,7 @@ java_import 'com.sun.org.apache.xml.internal.utils.PrefixResolver'
 java_import 'com.sun.org.apache.xml.internal.utils.PrefixResolverDefault'
 java_import 'org.xml.sax.InputSource'
 java_import 'com.sun.org.apache.xpath.internal.jaxp.XPathFactoryImpl'
+java_import 'com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl'
 
 LibXMLJRuby.require_all_libs_relative_to __FILE__
 ::LibXML = ::LibXMLJRuby
